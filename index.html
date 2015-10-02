@@ -1,0 +1,715 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Help Me Help You: Practical tips for designers from a WordPress developer</title>
+
+		<meta name="author" content="Dara Skolnick">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="img/swirl.jpg" data-background-repeat="repeat" data-state="white-text">
+					<h1>Help Me Help You</h1>
+					<h3>Practical tips for designers from a WordPress developer</h3>
+					<br>
+					<h5>With @daraskolnick</h5>
+				</section>
+
+				<section>
+					<section>
+						<h2>Hi, I'm Dara.</h2>
+						<h2>Nice to meet you!</h2>
+							<p>
+								I'm @daraskolnick basically everywhere on the Internet.
+							</p>
+					</section>
+					<section>
+						<h2>A little about me.</h2>
+						<h4>I...</h4>
+						<ul>
+							<li class="fragment">am from Toronto</li>
+							<li class="fragment">am both a web designer and front end developer</li>
+							<li class="fragment">run my own (very) small business</li>
+							<li class="fragment">do lots of WordPress development work in partnership with designers who don't code</li>
+							<li class="fragment">have been developing WP themes for 10 (!) years</li>
+						</ul>
+					</section>
+
+				</section>
+
+				<section>
+					<h2>This talk is for...</h2>
+					<ul>
+						<li class="fragment">Independent designers who don’t do their own development (or other designers who work remotely with developers)</li>
+						<li class="fragment">Designers creating custom themes from scratch (not child themes)</li>
+						<li class="fragment">Developers who want to help their designers make their lives easier</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>This might not be quite as useful for...</h2>
+					<ul>
+						<li class="fragment">Larger teams where designers and developers work side-by-side every day</li>
+						<li class="fragment">Designer/developer hybrids who always do everything</li>
+						<li class="fragment">Designers who design in the browser</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Why is this important to talk about?</h2>
+					<ul>
+						<li class="fragment">There’s often a lack of communication between designers and developers</li>
+						<li class="fragment">Designers and developers are often frustrated with each other</li>
+						<li class="fragment">It shouldn’t be this way. We’re on the same time! <br><em>(Team awesome website, that is.)</em></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Things (some) designers think about (some) developers</h2>
+					<ul>
+						<li class="fragment">Why does the finished website look different from my mockup?</li>
+						<li class="fragment">Why do they keep saying ‘no’ to things? Are they just grumpy?</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Things (some) developers think about (some) designers</h2>
+					<ul>
+						<li class="fragment">This is pretty, but have they actually thought about how this will work in a browser?</li>
+						<li class="fragment">Why isn’t this design more consistent and systematic?</li>
+						<li class="fragment">Uh oh, this design is totally going to fall apart with variable content.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>With a little education on both sides, we can fix these problems.</h2>
+				</section>
+
+				<section data-background="img/noneed.gif" data-state="white-text">
+					
+				</section>
+
+				<section>
+					<h2>This talk is organized into parts of the project life cycle</h2>
+					<ol>
+						<li>Before design begins</li>
+						<li>While you're designing</li>
+						<li>After development is complete</li>
+					</ol>
+
+				</section>
+
+				<section data-background="img/swirl2teal.jpg" data-state="white-text">
+					<h1>Part One: Before design begins</h1>
+				</section>
+
+				<section data-background="img/swirl2navy.jpg" data-state="white-text">
+					<h2>1. Choose a good developer</h2>
+					<h4>Development is not a commodity.<br>We're not all the same!</h4>
+				</section>
+
+
+				<section>
+					<h3>WordPress is not inherently “easy” or “hard” for clients to use. The developer makes all the difference.</h3>
+				</section>
+
+				<section>
+					<h3>👎 site admin experiences</h3>
+				</section>
+
+				<section>
+					<img src="img/code-in-editor.png" class="noborder" alt="">
+				</section>
+
+				<section>
+					<img src="img/shortcode-hell.png" class="noborder" alt="">
+				</section>
+
+				<section>
+					<img src="img/widget-hell.jpg" width="450" class="noborder" alt="">
+				</section>
+
+
+
+				<section data-background="img/shocked-owl.gif" data-state="white-text">
+				</section>
+
+				<section>
+					<h3>👍 site admin experience</h3>
+				</section>
+
+				<section>
+					<img src="img/editor-theteam.jpg" width="600" class="noborder" alt="">
+				</section>
+
+				<section>
+					<img src="img/editor-repeater.png" width="490" class="noborder" alt="">
+				</section>
+
+				<section>
+					<img src="img/editor-repeater-front.png" class="noborder" alt="">
+				</section>
+
+				<section>
+					<h3>Solution: Ask your potential developer what they do to make websites easy to update for non-technical clients</h3>
+					<h4>Ask to see examples!</h4>
+				</section>
+
+				<section>
+					<h2>Some developers pay more attention to detail than others</h2>
+					<h4 class="fragment">Snoop around their portfolio!</h4>
+				</section>
+
+				<section>
+					<h3>Resize your browser</h3>
+					<h4 class="fragment">Do their websites fall apart at any point?</h4>
+					<h4 class="fragment">Do you see horizontal scrollbars?</h4>
+				</section>
+
+				<section>
+					<img src="img/mobile-botched.jpg" alt="" class="noborder">
+				</section>
+
+				<section>
+					<img src="img/mobile-botched2.jpg" alt="" class="noborder">
+				</section>
+
+				<section>
+					<h3>Is their text actually text or is there text inside images?</h3>
+					<h4 class="fragment">Text in images is bad for performance, accessibility, and SEO. Also, hard for client to update</h4>
+				</section>
+
+				<section>
+					<img src="img/selected-text.jpg" alt="" class="noborder">
+				</section>
+
+				<section>
+					<img src="img/image-drag.jpg" alt="" class="noborder">
+				</section>
+
+				<section>
+					<h3>Check out their spacing</h3>
+					<h4 class="fragment">Is there enough padding around their sites?</h4>
+					<h4 class="fragment">Are text and form elements spaced nicely?</h4>
+				</section>
+
+				<section>
+					<img src="img/padding.jpg" alt="" class="noborder">
+				</section>
+
+				<section>
+					<img src="img/alignment.jpg" alt="" class="noborder">
+				</section>
+
+				<section>
+					<h3>Loading time</h3>
+					<h4 class="fragment">Do their sites take forever and ever to load?</h4>
+				</section>
+
+
+				<section>
+					<h2>Note!</h2>
+					<h3>Some of these issues might be out of the developer's control.</h3>
+					<h4 class="fragment">But a good developer will often fix these issues and they shouldn't be all over their portfolio.</h4>
+				</section>
+
+				<section>
+					<h2>Ask yourself: is this developer a nice person?</h2>
+				</section>
+
+				<section>
+					<h2>"Soft skills" matter</h2>
+					<h3 class="fragment">Do they use a lot of jargon and talk at you with a superiority complex? </h3>
+				</section>
+
+				<section data-background="img/peggythatsbs.gif"></section>
+
+				<section data-background="img/swirl2navy.jpg" data-state="white-text">
+					<h2>2. When should you bring your developer on board?</h2>
+				</section>
+
+				<section>
+					<h2>👍</h2>
+					<h3>Bring them on board before design has begun</h3>
+				</section>
+
+				<section>
+					<h2>👎</h2>
+					<h3>Designing without a developer in mind and assuming that anyone can do the job is a recipe for disaster.</h3>
+				</section>
+
+				<section>
+					<h2>👎👎👎</h2>
+					<h3>Even worse: handing designs to a client and then telling them to find a developer.</h3>
+					<h5 class="fragment">💩 💩 💩 💩 💩</h5>
+				</section>
+
+				<section>
+					<h2>This will make you look bad to your client</h2>
+				</section>
+
+				<section>
+					<h2>Things I’ve seen in designs that weren’t passed by a developer first</h2>
+				</section>
+
+				<section>
+					<h3>Oh, the things I've seen...</h3>
+					<ul>
+						<li>Fonts that were all non-web fonts</li>
+						<li class="fragment">Completely random element placement (position absolute all the things!) on a "responsive" site</li>
+						<li class="fragment">“Mobile designs” for a responsive site that bear very little resemblance to the full-sized design</li>
+						<li class="fragment">Graphics that rely on Photoshop blending modes</li>
+						<li class="fragment">Huge images that would take forever to load</li>
+						<li class="fragment">Extremely inconsistent page designs</li>
+					</ul>
+				</section>
+
+				
+				<section data-background="img/shocked-owl.gif" data-state="white-text">
+				</section>
+
+				<section>
+					<h2>This puts your developer in an awkward position</h2>
+					<h3 class="fragment">They have to let both you and your client down.</h3>
+				</section>
+
+				<section>
+					<h2><strong>Good communication is a must.</strong><br>Ask your prospective developer lots of questions!</h2>
+				</section>
+
+				<section><h3>Questions to ask before the project starts</h3>
+
+				<ul>
+					<li class="fragment">What browsers and devices do you test on?</li>
+					<li class="fragment">Who’s going to enter the content?</li>
+					<li class="fragment">Who’s responsible for creating mobile/tablet sized designs?</li>
+					<li class="fragment">Does the client need training? If so, who’s responsible?</li>
+				</ul>
+
+				</section>
+
+				<section>
+					<h3>Questions to ask while designing</h3>
+					<ul>
+						<li class="fragment">Will [insert layout idea here] work in WordPress/on a responsive site?</li>
+						<li class="fragment">Can I pass something by you before I send it to the client?</li>
+					</ul>
+				</section>
+
+				<section data-background="img/swirl2teal.jpg" data-state="white-text">
+					<h1>Part Two: The Design Phase</h1>
+				</section>
+
+				<section data-background="img/swirl2navy.jpg" data-state="white-text">
+					<h2>Q: What software should I use?</h2>
+					<h3>A: Whatever you’re comfortable with… within reason.</h3>
+				</section>
+
+				<section>
+					<h2>Popular choices</h2>
+					<ul>
+						<li>Photoshop</li>
+						<li>Illustrator</li>
+						<li>Sketch</li>
+					</ul>
+
+					<p class="fragment"><br>Good developers should be able to work in different programs. They’re just tools. Though if I find out your design is in InDesign I might mark up your quote ;)</p>
+				</section>
+
+				<section>
+					<h2>Whichever app you choose...</h2>
+					<h3>...use vectors as often as possible!</h3>
+				</section>
+
+				<section>
+					<h2>Why vectors?</h2>
+					<ul>
+						<li class="fragment">We need to create Retina/HiDPI graphics</li>
+						<li class="fragment">It’s 2015 and SVGs are very well supported</li>
+						<li class="fragment">Design elements are crisp and clean at any size</li>
+						<li class="fragment">Makes your life and dev’s life easier</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>If you're using Illustrator or Sketch...</h2>
+					<p>You're already designing with vector assets. High five!</p>
+				</section>
+
+				<section>
+					<h2>If you're using Photoshop...</h2>
+					<ul>
+						<li class="fragment">Use shapes</li>
+						<li class="fragment">Paste in vector graphics from Illustrator as Smart Objects</li>
+					</ul>
+				</section>
+
+				<section data-background="img/swirl2navy.jpg" data-state="white-text">
+					<h2>Keep your design files organized</h2>
+				</section>
+
+				<section>
+					<h2>Name, order, and group your layers</h2>
+				</section>
+
+				<section>
+					<h2>👎</h2>
+					<img src="img/layers-shit.png" alt="" width="400" class="noborder">
+				</section>
+
+				<section>
+					<h2>👍</h2>
+					<img src="img/layers-good.png" alt="" width="400" class="noborder">
+				</section>
+
+				<section>
+					<h2>Delete layers you're not using anymore</h2>
+				</section>
+
+				<section>
+					<h2>Use Layer Comps (if you're using Photoshop)</h2>
+				</section>
+
+				<section>
+					<h3>Layer comps</h3>
+					<ul>
+						<li class="fragment">A layer comps is a snapshot of the state of your layers a particular point</li>
+						<li class="fragment">Layer comps toggle different layer order and visibility</li>
+						<li class="fragment">This is perfect for different states (hover state, active state, nav menu opened, swapping out images in a carousel, etc.)</li>
+					</ul>
+				</section>
+
+				<section>
+					<img src="img/layer-comps.png" class="noborder" alt="" width="400">
+				</section>
+
+				<section>
+					<h2>A couple of other tips</h2>
+					<ul>
+						<li class="fragment">Don't put all your page designs in one big file</li>
+						<li class="fragment">Always use whole pixels numbers</li>
+
+					</ul>
+				</section>
+
+				<section data-background="img/swirl2navy.jpg" data-state="white-text">
+					<h2>Use a grid!</h2>
+				</section>
+
+				<section>
+					<img src="img/grid.png" class="noborder" alt="">
+				</section>
+
+				<section>
+					<h2>Why should I use a grid?</h2>
+					<ul>
+						<li class="fragment">Keeps your designs neat, tidy and balanced</li>
+						<li class="fragment">Devs can't make wrong assumptions about spacing and sizing if everything aligns to a grid</li>
+						<li class="fragment">Good devs should work with whatever grid you prefer or can offer suggestions if you don’t have one</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>A few grid resources</h2>
+					<ul>
+						<li><a href="http://www.elliotjaystocks.com/blog/a-better-photoshop-grid-for-responsive-web-design/">A better Photoshop grid for responsive web design</a></li>
+						<li><a href="http://1200px.com/">1200px grid system</a></li>
+						<li><a href="http://guideguide.me/">guideguide.me</a></li>
+						<li><a href="https://gridsetapp.com/">Gridset</a></li>
+						<li>Or make your own!</li>
+					</ul>
+				</section>
+
+				<section data-background="img/swirl2navy.jpg" data-state="white-text">
+					<h2>Be consistent</h2>
+				</section>
+
+				<section>
+					<h2>Developers are very literal</h2>
+					<p class="fragment">If your font styles, spacing, and sizing of elements is inconsistent from one page to another, we’ll be confused and might make incorrect assumptions.</p>
+				</section>
+
+				<section>
+					<h3>If your designs aren't consistent, your developer’s implementation probably won't be great either.</h3>
+					<p> You and your client will be sad.</p>
+				</section>
+
+				<section>
+					<h2>Solution: style guides!</h2>
+					<p class="fragment">Do this before you get too far into designing, for your own sake. </p>
+				</section>
+
+				<section>
+					<img src="img/style-guide.jpg" class="noborder" alt="">
+				</section>
+
+				<section>
+					<h2>Style guides should contain</h2>
+					<ul>
+						<li>Typographic styles (paragraphs, unordered lists, ordered lists, headings 1-6, blockquotes)</li>
+						<li>Colour palette</li>
+						<li>States: hover, active, focus</li>
+						<li>Form inputs (minimum: single line text input, multi line text area, submit button)</li>
+						<li>Any other styles repeated throughout your site</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Use paragraph and character styles</h2>
+				</section>
+
+				<section>
+					<img src="img/paragraph-styles.png" class="noborder" alt="">
+				</section>
+
+				<section>
+					<img src="img/paragraph-styles2.png" class="noborder" alt="">
+				</section>
+
+				<section data-background="img/swirl2navy.jpg" data-state="white-text">
+					<h2>Think in terms of templates and modules, not just unique pages</h2>
+				</section>
+
+				<section>
+					<h2>Things developers love</h2>
+					<ul>
+						<li class="fragment">Re-usability</li>
+						<li class="fragment">Patterns</li>
+						<li class="fragment">Consistency</li>
+					</ul>
+
+					<p class="fragment">Further reading: <a href="http://bradfrost.com/blog/post/atomic-web-design/">Atomic web design</a></p>
+				</section>
+
+				<section>
+					<h2>WordPress sites are all about repetition</h2>
+					<ul>
+						<li>Page templates</li>
+						<li>Custom post types</li>
+						<li>Variations need to fit within a system</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Think about the variations in a WordPress site, too</h2>
+				</section>
+
+				<section>
+					<h3>The simplest, standard page</h3>
+				</section>
+
+				<section>
+					<h3>The 404 page</h3>
+					<p>(Almost everyone forgets this!)</p>
+				</section>
+
+				<section>
+					<h3>Fallbacks for missing content</h3>
+					<p>(e.g. what if the client forgets to upload a featured image?)</p>
+				</section>
+
+				<section>
+					<h3>Hover/focus/active states throughout the site</h3>
+					<p>(Otherwise, your developer will leave it out or make it up.)</p>
+				</section>
+
+				<section>
+					<h2>Other things some designers have forgotten</h2>
+					<ul>
+						<li>Blog comments</li>
+						<li>Navigation menu dropdown (submenu)</li>
+						<li>Image with caption</li>
+						<li>Search results</li>
+						<li>Form styling</li>
+					</ul>
+				</section>
+
+				<section data-background="img/swirl2navy.jpg" data-state="white-text">
+					<h2>What about responsive design?!</h2>
+				</section>
+
+				<section>
+					<h1><strong>Responsive sites don’t just happen.</strong></h1>
+				</section>
+
+				<section>
+					<h2>Some newbie designers and clients think that “WordPress takes care of mobile”. Nooooooo.</h2>
+				</section>
+
+				<section>
+					<h2>Who should figure out the responsive website?</h2>
+					<p class="fragment">If you leave it to your developer, make sure they’re okay with that and that they’re good at design.</p>
+					<p class="fragment">Resource: <a href="http://mediaqueri.es">mediaqueri.es</a></p>
+				</section>
+
+				<section>
+					<h2>Responsive design shouldn’t be an afterthought</h2>
+				</section>
+
+				<section>
+					<h2>Things to think about</h2>
+					<ul>
+						<li class="fragment">How should the site navigation work?</li>
+						<li class="fragment">Are buttons and links easily tappable?</li>
+						<li class="fragment">Should the font sizes and spacing change?</li>
+						<li class="fragment">Does the mobile browsing experience feel good?</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Mobile first?</h2>
+					<h2>Mobile last?</h2>
+				</section>
+
+				<section>
+					<h2>My favourite:<br>Mobile concurrent!</h2>
+					<p style="fragment">Keep the smallest version of the site in mind as you’re designing the largest and vice versa. Switch back and forth.</p>
+				</section>
+
+				<section>
+					<h2>Responsive site = same content at all sizes</h2>
+					<p class="fragment">Not hiding 3/4 of the content</p>
+					<p class="fragment">Please design responsibly!</p>
+				</section>
+
+				<section>
+					<h2>Brownie points</h2>
+					<p>Think about how your website will behave <em>between</em> the largest and smallest sizes.</p>
+				</section>
+
+				<section data-background="img/swirl2navy.jpg" data-state="white-text">
+					<h2>Think about performance</h2>
+				</section>
+
+				<section>
+					<h2>Much of this is up to your developer, but here’s what you can do</h2>
+				</section>
+
+				<section>
+					<h3>Performance tweaks</h3>
+					<ul>
+						<li>Limit the number of web fonts</li>
+						<li class="fragment">Limit the number of huge (non-tiling) images</li>
+						<li class="fragment">Don’t just hide half the site in the mobile view</li>
+						<li class="fragment">Teach your client about resizing and optimizing images (Resource: <a href="https://imageoptim.com/">ImageOptim)</a></li>
+					</ul>
+				</section>
+
+				<section data-background="img/swirl2teal.jpg" data-state="white-text">
+					<h1>Part Three: While development is happening</h1>
+				</section>
+
+				<section data-background="img/alice.gif" data-state="white-text">
+					
+				</section>
+
+				<section data-background="img/swirl2teal.jpg" data-state="white-text">
+					<h1>Part Four: After development is complete</h1>
+				</section>
+
+				<section>
+					<h2>Let your developer know if anything is broken</h2>
+					<p class="fragment">Tell them what OS, browser and device you’re using! This is extremely helpful information for debugging.</p>
+				</section>
+
+				<section>
+					<h2>Test the admin side of the website</h2>
+					<ul>
+						<li class="fragment">Add in content yourself, make sure the workflow makes sense</li>
+						<li class="fragment">Try variations in content (e.g. different lengths) to see how the site stands up</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Getting involved in using the staging site helps you help your clients</h2>
+				</section>
+
+				<section data-background="img/highfive.gif" data-state="white-text">
+					<h2>Now, go help your developer help you make awesome websites!</h2>
+				</section>
+
+				<section data-background="img/swirl2teal.jpg" data-state="white-text">
+					<h1>Questions?</h1>
+				</section>
+
+
+
+				<section data-background="img/swirl.jpg" data-background-repeat="repeat" data-state="white-text">
+					<h1>Thanks!</h1>
+					<h4 style="margin-top:100px;"><a style="color:white;" href="http://twitter.com/daraskolnick">@daraskolnick</a></h4>
+					<h4><a style="color:white;" href="http://daraskolnick.com">daraskolnick.com</a></h4>
+					<h4>Slides:<br><strong><a style="color:white" href="http://daraskolnick.github.io/WCTO-designer-developer">daraskolnick.github.io/WCTO-designer-developer</a></strong></h4>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
